@@ -1,0 +1,54 @@
+package ramalancupu;
+
+import java.util.Scanner;
+public class RamalanCupu {
+
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Scanner inputnamapasangan = new Scanner(System.in);
+        Scanner inputumurpasangan = new Scanner(System.in);
+        String nama;
+        String namapasangan;
+        int umur;
+        int umurpasangan;
+        
+        System.out.println("Selamat Datang di Program Ramalan Cupu");
+        System.out.println("**************************************");
+        System.out.println("Data Anda:");
+        System.out.println("**********");
+        
+        System.out.print("Masukkan nama anda: ");
+        nama = input.nextLine();
+        System.out.print("Masukkan umur anda: ");
+        umur = input.nextInt();
+        
+        
+        System.out.println("\nData Pasangan Anda:");
+        System.out.println("*******************");
+        
+        System.out.print("Masukkan nama pasangan anda: ");
+        namapasangan = inputnamapasangan.nextLine();
+       
+        System.out.print("Masukkan umur pasangan anda: ");
+        umurpasangan = inputumurpasangan.nextInt();
+   
+        System.out.println(nama +   "[" + umur + "]" +   "tahun");
+        System.out.println("  ***     ***   ");
+        System.out.println(" *****   ***** ");
+        System.out.println("  ***********  ");
+        System.out.println("   *********   ");
+        System.out.println("    ******     ");
+        System.out.println("     ****      ");
+        System.out.println("      **       ");
+        System.out.println(namapasangan +   "[" + umurpasangan + "]" +   "tahun");
+        System.out.println("\nTekan ENTER untuk melihat hasil ramalan...");
+       
+        double X = 99;
+        double cocok = X/1.1;
+        
+        System.out.println("\nKecocokan anda dengan pasangan anda adalah: " + cocok + "%");
+        System.out.println("\nTerima kasih telah menggunakan jasa ramalan kami ^-^");
+    }
+    
+}
